@@ -11,12 +11,12 @@ repositories {
 
 dependencies {
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation("org.seleniumhq.selenium:selenium-java:4.34.0")
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.35.0'
 
     // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation("org.testng:testng:7.10.2")
+    testImplementation 'org.testng:testng:7.11.0'
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
